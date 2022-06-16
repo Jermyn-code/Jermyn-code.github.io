@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.0.0-alpha.111">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  
-  <link rel="canonical" href="http://example.com/2022/05/17/3、spark ha & yarn配置/"/>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="http://example.com/archives/2022/06/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://npm.elemecdn.com'>
@@ -31,19 +31,17 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Hexo</title>
+  <title>Archive: 2022/6 - Hexo</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="This is Jermyn-blog!!! - John Doe - Hexo">
   
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:url" content="http://example.com/archives/2022/06/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="三、Spark-Standalone-HA模式Spark Standalone集群是Master-Slaves架构的集群模式,和大部分的Master-Slaves结构集群一样,存在着Master 单点故障(SPOF)的问题。简单理解为，spark-Standalone 模式下为 master 节点控制其他节点，当 master 节点出现故障时，集群就不可用了。						spark-Standal">
+<meta property="og:description" content="This is Jermyn-blog!!!">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2022-05-17T02:41:06.690Z">
-<meta property="article:modified_time" content="2022-05-20T02:33:23.181Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2176,7 +2174,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2445,7 +2443,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper post dock' style="display: none;">
+      <div id="half" class='cover-wrapper  dock' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
 
@@ -2520,8 +2518,26 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/">
+	
+		
+  <section class="post-list">
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/16/6%E3%80%81kafka%20API%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2530,297 +2546,181 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="This is Jermyn-blog!!!">
   </span>
   
-
-
+  
   
     <span hidden>
       <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  <div class="article-meta" id="top">
+  
     
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/06/16/6%E3%80%81kafka%20API%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"  itemprop="url">
+        Jun 16, 2022
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
     
+      
+        Kafka生产者api示例1、 生产者api示例一个正常的生产逻辑需要具备以下几个步骤
+1234(1)配置生产者客户端参数及创建相应的生产者实例(2)构建待发送的消息(3)发送消息(4)关闭生产者实例
+
+
+示例代码（部分截取）
+
+12345678910111213141516171819202122232425262728Properties props = new Properties()...
+      
     
-      <span hidden itemprop="name headline">
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
         
-      </span>
-    
-  </div>
-
-
-  <div id="layoutHelper-page-plugins"></div>
-  <div id="post-body" itemprop="articleBody">
-    <h5 id="三、Spark-Standalone-HA模式"><a href="#三、Spark-Standalone-HA模式" class="headerlink" title="三、Spark-Standalone-HA模式"></a>三、Spark-Standalone-HA模式</h5><p>Spark Standalone集群是Master-Slaves架构的集群模式,和大部分的Master-Slaves结构集群一样,存在着Master 单点故障(SPOF)的问题。简单理解为，spark-Standalone 模式下为 master 节点控制其他节点，当 master 节点出现故障时，集群就不可用了。						spark-Standalone-HA 模式下 master 节点不固定，当一个宕机时，立即换另一台为 master 保障不出现故障。</p>
-<ul>
-<li><p>此处因为先前配置时的 zookeeper 版本和 spark 版本不太兼容，导致此模式有故障，需要重新下载配置新的版本的 zookeeper</p>
-</li>
-<li><p>配置之前需要删除三台主机的 旧版 zookeeper 以及 对应的软连接</p>
-</li>
-<li><p>在 master 节点上重新进行前面配置的 zookeeper 操作</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.上传apache-zookeeper-3.7.0-bin.tar.gz 到/export/server/目录下 并解压文件</span><br><span class="line">2.在 /export/server 目录下创建软连接</span><br><span class="line">3.进入   /export/server/zookeeper/conf/  将 zoo_sample.cfg 文件复制为新文件 zoo.cfg </span><br><span class="line">4.接上步给 zoo.cfg  添加内容 </span><br><span class="line">5.进入 /export/server/zookeeper/zkdatas 目录在此目录下创建 myid 文件，将 1 写入进去</span><br><span class="line">6.将 master 节点中 /export/server/zookeeper-3.7.0 路径下内容推送给slave1 和 slave2</span><br><span class="line">7.推送成功后，分别在 slave1 和 slave2 上创建软连接</span><br><span class="line">8.接上步推送完成后将 slave1 和 slave2 的 /export/server/zookeeper/zkdatas/文件夹下的 myid 中的内容分别改为 2 和 3</span><br><span class="line">配置环境变量：</span><br><span class="line">因先前配置 zookeeper 时候创建过软连接且以 ’zookeeper‘ 为路径，所以不用配置环境变量，此处也是创建软连接的方便之处. </span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入  &#x2F;export&#x2F;server&#x2F;spark&#x2F;conf  文件夹 修改 spark-env.sh 文件内容</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /export/server/spark/conf </span><br><span class="line"></span><br><span class="line">vim spark-env.sh</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>为 83 行内容加上注释，此部分原为指定 某台主机 做 master ，加上注释后即为 任何主机都可以做 master</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">结果显示：</span><br><span class="line">......</span><br><span class="line"> 82 # 告知Spark的master运行在哪个机器上</span><br><span class="line"> 83 # export SPARK_MASTER_HOST=master</span><br><span class="line">.........</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>文末添加内容</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SPARK_DAEMON_JAVA_OPTS=&quot;-Dspark.deploy.recoveryMode=ZOOKEEPER -Dspark.deploy.zookeeper.url=master:2181,slave1:2181,slave2:2181 -Dspark.deploy.zookeeper.dir=/spark-ha&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">spark.deploy.recoveryMode 指定HA模式 基于Zookeeper实现</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定Zookeeper的连接地址</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定在Zookeeper中注册临时节点的路径</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p>分发 spark-env.sh 到 salve1 和 slave2 上</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp spark-env.sh slave1:/export/server/spark/conf/</span><br><span class="line"></span><br><span class="line">scp spark-env.sh slave2:/export/server/spark/conf/</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动之前确保 Zookeeper 和 HDFS 均已经启动</p>
-</li>
-<li><p>启动集群:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在 master 上 启动一个master 和全部worker</span></span><br><span class="line">/export/server/spark/sbin/start-all.sh</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">注意, 下面命令在 slave1 上执行 启动 slave1 上的 master 做备用 master</span></span><br><span class="line">/export/server/spark/sbin/start-master.sh</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">结果显示：</span><br><span class="line">(base) [root@master ~]# jps</span><br><span class="line">37328 DataNode</span><br><span class="line">41589 Master</span><br><span class="line">35798 QuorumPeerMain</span><br><span class="line">38521 ResourceManager</span><br><span class="line">46281 Jps</span><br><span class="line">38907 NodeManager</span><br><span class="line">41821 Worker</span><br><span class="line">36958 NameNode</span><br><span class="line"></span><br><span class="line">(base) [root@slave1 sbin]# jps</span><br><span class="line">36631 DataNode</span><br><span class="line">48135 Master</span><br><span class="line">35385 QuorumPeerMain</span><br><span class="line">37961 NodeManager</span><br><span class="line">40970 Worker</span><br><span class="line">48282 Jps</span><br><span class="line">37276 SecondaryNameNode</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>访问 WebUI 界面</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://master:8081/</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/image-20220403195207486.png" class="lazyload" data-srcset="/../images/image-20220403195207486.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220403195207486"></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://slave1:8082/</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/image-20220403195512439.png" class="lazyload" data-srcset="/../images/image-20220403195512439.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220403195512439"></p>
-</li>
-<li><p>此时 kill 掉 master 上的 master 假设 master 主机宕机掉</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">master主机 master 的进程号</span></span><br><span class="line">kill -9 41589</span><br><span class="line"></span><br><span class="line">结果显示：</span><br><span class="line">(base) [root@master ~]# jps</span><br><span class="line">37328 DataNode</span><br><span class="line">90336 Jps</span><br><span class="line">35798 QuorumPeerMain</span><br><span class="line">38521 ResourceManager</span><br><span class="line">38907 NodeManager</span><br><span class="line">41821 Worker</span><br><span class="line">36958 NameNode</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>访问 slave1 的 WebUI</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://slave1:8082/</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/image-20220403203828713.png" class="lazyload" data-srcset="/../images/image-20220403203828713.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220403203828713"></p>
-</li>
-<li><p>进行主备切换的测试</p>
-</li>
-<li><p>提交一个 spark 任务到当前 活跃的 master上 :</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/export/server/spark/bin/spark-submit --master spark://master:7077 /export/server/spark/examples/src/main/python/pi.py 1000</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复制标签 kill 掉 master 的 进程号</p>
-</li>
-<li><p>再次访问 master 的 WebUI</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://master:8081/</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">网页访问不了！</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>再次访问 slave1 的 WebUI</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://slave1:8082/</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/image-20220403204737370.png" class="lazyload" data-srcset="/../images/image-20220403204737370.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220403204737370"></p>
-</li>
-<li><p>可以看到当前活跃的 master 提示信息</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(base) [root@master ~]# /export/server/spark/bin/spark-submit --master spark://master:7077 /export/server/spark/examples/src/main/python/pi.py 1000</span><br><span class="line">22/03/29 16:11:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable</span><br><span class="line">22/03/29 16:12:16 WARN StandaloneAppClient$ClientEndpoint: Connection to master:7077 failed; waiting for master to reconnect...</span><br><span class="line">22/03/29 16:12:16 WARN StandaloneSchedulerBackend: Disconnected from Spark cluster! Waiting for reconnection...</span><br><span class="line">22/03/29 16:12:16 WARN StandaloneAppClient$ClientEndpoint: Connection to master:7077 failed; waiting for master to reconnect...</span><br><span class="line">Pi is roughly 3.140960</span><br><span class="line">(base) [root@master ~]# </span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">同样可以输出结果</span><br></pre></td></tr></table></figure>
-
-<p>当新的 master 接收集群后, 程序继续运行, 正常得到结果.</p>
-<blockquote>
-<p>结论 HA模式下, 主备切换 不会影响到正在运行的程序.</p>
-<p>最大的影响是 会让它中断大约30秒左右.</p>
-</blockquote>
-</li>
-</ul>
-<h5 id="四、Spark-On-YARN模式"><a href="#四、Spark-On-YARN模式" class="headerlink" title="四、Spark On YARN模式"></a>四、Spark On YARN模式</h5><p>在已有YARN集群的前提下在单独准备Spark StandAlone集群,对资源的利用就不高.Spark On YARN, 无需部署Spark集群, 只要找一台服务器, 充当Spark的客户端</p>
-<ul>
-<li><p>保证 HADOOP_CONF_和 DIR_YARN_CONF_DIR 已经配置在 spark-env.sh 和环境变量中 （注: 前面配置spark-Standlone 时已经配置过此项了）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">spark-env.sh 文件部分显示：</span><br><span class="line">....</span><br><span class="line"> 77 ## HADOOP软件配置文件目录，读取HDFS上文件和运行YARN集群</span><br><span class="line"> 78 HADOOP_CONF_DIR=/export/server/hadoop/etc/hadoop</span><br><span class="line"> 79 YARN_CONF_DIR=/export/server/hadoop/etc/hadoop</span><br><span class="line">....</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>链接到 YARN 中（注: 交互式环境 pyspark  和 spark-shell  无法运行 cluster模式）</p>
-</li>
-<li><pre><code class="shell">bin/pyspark --master yarn --deploy-mode client|cluster
-# --deploy-mode 选项是指定部署模式, 默认是 客户端模式
-# client就是客户端模式
-# cluster就是集群模式
-# --deploy-mode 仅可以用在YARN模式下
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- ```shell</span><br><span class="line">  bin/spark-shell --master yarn --deploy-mode client|cluster</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><pre><code class="shell">bin/spark-submit --master yarn --deploy-mode client|cluster /xxx/xxx/xxx.py 参数
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- spark-submit 和 spark-shell 和 pyspark的相关参数</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-- bin/pyspark: pyspark解释器spark环境
-- bin/spark-shell: scala解释器spark环境
-- bin/spark-submit: 提交jar包或Python文件执行的工具
-- bin/spark-sql: sparksql客户端工具
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-这4个客户端工具的参数基本通用.以spark-submit 为例:
-bin/spark-submit --master spark://master:7077 xxx.py`
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```shell</span><br><span class="line">Usage: spark-submit [options] &lt;app jar | python file | R file&gt; [app arguments]</span><br><span class="line">Usage: spark-submit --kill [submission ID] --master [spark://...]</span><br><span class="line">Usage: spark-submit --status [submission ID] --master [spark://...]</span><br><span class="line">Usage: spark-submit run-example [options] example-class [example args]</span><br><span class="line"></span><br><span class="line">Options:</span><br><span class="line">  --master MASTER_URL         spark://host:port, mesos://host:port, yarn,</span><br><span class="line">                              k8s://https://host:port, or local (Default: local[*]).</span><br><span class="line">  --deploy-mode DEPLOY_MODE   部署模式 client 或者 cluster 默认是client</span><br><span class="line">  --class CLASS_NAME          运行java或者scala class(for Java / Scala apps).</span><br><span class="line">  --name NAME                 程序的名字</span><br><span class="line">  --jars JARS                 Comma-separated list of jars to include on the driver</span><br><span class="line">                              and executor classpaths.</span><br><span class="line">  --packages                  Comma-separated list of maven coordinates of jars to include</span><br><span class="line">                              on the driver and executor classpaths. Will search the local</span><br><span class="line">                              maven repo, then maven central and any additional remote</span><br><span class="line">                              repositories given by --repositories. The format for the</span><br><span class="line">                              coordinates should be groupId:artifactId:version.</span><br><span class="line">  --exclude-packages          Comma-separated list of groupId:artifactId, to exclude while</span><br><span class="line">                              resolving the dependencies provided in --packages to avoid</span><br><span class="line">                              dependency conflicts.</span><br><span class="line">  --repositories              Comma-separated list of additional remote repositories to</span><br><span class="line">                              search for the maven coordinates given with --packages.</span><br><span class="line">  --py-files PY_FILES         指定Python程序依赖的其它python文件</span><br><span class="line">  --files FILES               Comma-separated list of files to be placed in the working</span><br><span class="line">                              directory of each executor. File paths of these files</span><br><span class="line">                              in executors can be accessed via SparkFiles.get(fileName).</span><br><span class="line">  --archives ARCHIVES         Comma-separated list of archives to be extracted into the</span><br><span class="line">                              working directory of each executor.</span><br><span class="line"></span><br><span class="line">  --conf, -c PROP=VALUE       手动指定配置</span><br><span class="line">  --properties-file FILE      Path to a file from which to load extra properties. If not</span><br><span class="line">                              specified, this will look for conf/spark-defaults.conf.</span><br><span class="line"></span><br><span class="line">  --driver-memory MEM         Driver的可用内存(Default: 1024M).</span><br><span class="line">  --driver-java-options       Driver的一些Java选项</span><br><span class="line">  --driver-library-path       Extra library path entries to pass to the driver.</span><br><span class="line">  --driver-class-path         Extra class path entries to pass to the driver. Note that</span><br><span class="line">                              jars added with --jars are automatically included in the</span><br><span class="line">                              classpath.</span><br><span class="line"></span><br><span class="line">  --executor-memory MEM       Executor的内存 (Default: 1G).</span><br><span class="line"></span><br><span class="line">  --proxy-user NAME           User to impersonate when submitting the application.</span><br><span class="line">                              This argument does not work with --principal / --keytab.</span><br><span class="line"></span><br><span class="line">  --help, -h                  显示帮助文件</span><br><span class="line">  --verbose, -v               Print additional debug output.</span><br><span class="line">  --version,                  打印版本</span><br><span class="line"></span><br><span class="line"> Cluster deploy mode only(集群模式专属):</span><br><span class="line">  --driver-cores NUM          Driver可用的的CPU核数(Default: 1).</span><br><span class="line"></span><br><span class="line"> Spark standalone or Mesos with cluster deploy mode only:</span><br><span class="line">  --supervise                 如果给定, 可以尝试重启Driver</span><br><span class="line"></span><br><span class="line"> Spark standalone, Mesos or K8s with cluster deploy mode only:</span><br><span class="line">  --kill SUBMISSION_ID        指定程序ID kill</span><br><span class="line">  --status SUBMISSION_ID      指定程序ID 查看运行状态</span><br><span class="line"></span><br><span class="line"> Spark standalone, Mesos and Kubernetes only:</span><br><span class="line">  --total-executor-cores NUM  整个任务可以给Executor多少个CPU核心用</span><br><span class="line"></span><br><span class="line"> Spark standalone, YARN and Kubernetes only:</span><br><span class="line">  --executor-cores NUM        单个Executor能使用多少CPU核心</span><br><span class="line"></span><br><span class="line"> Spark on YARN and Kubernetes only(YARN模式下):</span><br><span class="line">  --num-executors NUM         Executor应该开启几个</span><br><span class="line">  --principal PRINCIPAL       Principal to be used to login to KDC.</span><br><span class="line">  --keytab KEYTAB             The full path to the file that contains the keytab for the</span><br><span class="line">                              principal specified above.</span><br><span class="line"></span><br><span class="line"> Spark on YARN only:</span><br><span class="line">  --queue QUEUE_NAME          指定运行的YARN队列(Default: &quot;default&quot;).</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>启动 YARN 的历史服务器</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /export/server/hadoop-3.3.0/sbin</span><br><span class="line"></span><br><span class="line">./mr-jobhistory-daemon.sh start historyserver</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>访问WebUI界面</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://master:19888/</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/image-20220403213634530.png" class="lazyload" data-srcset="/../images/image-20220403213634530.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220403213634530"></p>
-</li>
-<li><p>client 模式测试</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SPARK_HOME=/export/server/spark </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash">&#123;SPARK_HOME&#125;/bin/spark-submit  --master yarn  --deploy-mode client  --driver-memory 512m  --executor-memory 512m  --num-executors 1  --total-executor-cores 2 <span class="variable">$&#123;SPARK_HOME&#125;</span>/examples/src/main/python/pi.py 3</span></span><br></pre></td></tr></table></figure>
-
-
-</li>
-<li><p>cluster 模式测试</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SPARK_HOME=/export/server/spark </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash">&#123;SPARK_HOME&#125;/bin/spark-submit --master yarn --deploy-mode cluster --driver-memory 512m --executor-memory 512m --num-executors 1 --total-executor-cores 2 --conf <span class="string">&quot;spark.pyspark.driver.python=/root/anaconda3/bin/python3&quot;</span> --conf <span class="string">&quot;spark.pyspark.python=/root/anaconda3/bin/python3&quot;</span> <span class="variable">$&#123;SPARK_HOME&#125;</span>/examples/src/main/python/pi.py 3</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-
-
-  </div>
-  
-  
-    
-    <div class='footer'>
+        <time itemprop="dateCreated datePublished" datetime="2022-06-16T09:58:21+08:00">2022-06-16</time>
+        
+      </div>
       
-      
-      
-        <div class='copyright'>
-          <blockquote>
-            
-              
-                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-              
-            
-              
-                <p>本文永久链接是：<a href=http://example.com/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/>http://example.com/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/</a></p>
-              
-            
-          </blockquote>
+        <div>
+          <a class='readmore' href='/2022/06/16/6%E3%80%81kafka%20API%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/' itemprop="url">
+            Read More
+          </a>
         </div>
       
-      
     </div>
   
-  
-    
 
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-20T10:33:23+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 20, 2022</p>
-  </a>
 </div>
 
+          </div>
         
       
         
-          
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/&title= - Hexo&summary="
-          
-          >
-          
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/&title= - Hexo&summary="
-          
-          >
-          
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/&title= - Hexo&summary="
-          
-          >
-          
-            <img src="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-    <!-- Custom Files bottomMeta begin -->
-    
-    <!-- Custom Files bottomMeta end -->
-  </div>
-
-
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/16/5%E3%80%81Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Hexo">
+    <meta itemprop="description" content="This is Jermyn-blog!!!">
+  </span>
   
   
-
   
-    <div class="prev-next">
-      
-        <a class='prev' href='/2022/06/16/4%E3%80%81kafka%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>May 17, 2022</p>
-          <p class='content'>kafka环境配置Kafka是一种高吞吐量的分布式发布订阅消息系统，其在大数据开发应用上的目的是通过 Hadoo的并行加载机制来统一线上和离线的消息处理，也是为了通过集群来提供实时的消息。大数据...</p>
-        </a>
-      
-      
-        <a class='next' href='/2022/05/17/2%E3%80%81Spark%20local&%20stand-alone%E9%85%8D%E7%BD%AE/'>
-          <p class='title'>May 17, 2022<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Spark安装配置Spark是专为大规模数据处理而设计的快速通用的计算引擎，其提供了一个全面、统一的框架用于管理各种不同性质的数据集和数据源的大数据处理的需求，大数据开发需掌握Spark基础、S...</p>
-        </a>
-      
-    </div>
-  
-  <!-- Custom Files postEnd begin-->
-  
-  <!-- Custom Files postEnd end-->
-</article>
-
-
-  
-
-
-  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/index.html#comments">
+      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
-    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+  
+  
     
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/06/16/5%E3%80%81Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/"  itemprop="url">
+        Jun 16, 2022
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Kafka命令行操作1、创建 topic1./kafka-topics.sh --zookeeper master:2181,slave1:2181,slave2:2181 --create --replication-factor 3 --partitions 3 --topic test_2
 
-    <div id="layoutHelper-comments"></div>
 
-  </article>
+123--replication-factor 副本数量--partitions 分区数量-...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-06-16T09:58:21+08:00">2022-06-16</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/06/16/5%E3%80%81Kafka%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/16/4%E3%80%81kafka%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Hexo">
+    <meta itemprop="description" content="This is Jermyn-blog!!!">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/06/16/4%E3%80%81kafka%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"  itemprop="url">
+        Jun 16, 2022
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        kafka环境配置Kafka是一种高吞吐量的分布式发布订阅消息系统，其在大数据开发应用上的目的是通过 Hadoo的并行加载机制来统一线上和离线的消息处理，也是为了通过集群来提供实时的消息。大数据开发需掌握Kafka架构原理及各组件的作用和使用方法及相关功能的实现。
+
+上传文件包 到&#x2F;export&#x2F;server&#x2F;
+
+解压文件
+1tar -zxvf kafka_2....
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-06-16T09:58:21+08:00">2022-06-16</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/06/16/4%E3%80%81kafka%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
+  
 
 
-
-
-
-
+	
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2828,34 +2728,87 @@ bin/spark-submit --master spark://master:7077 xxx.py`
     
     
 
-
-
-  <section class="widget toc-wrapper shadow floatable blur desktop mobile pjax" id="toc-div" >
+<section class="widget blogger shadow floatable blur desktop mobile pjax">
+  <div class='content'>
     
-  <header>
+      
+        <a class='avatar flat-box rectangle' href='/about/'>
+          <img no-lazy src='https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+        </a>
+      
     
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
-  </header>
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">Hexo</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fa-solid fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:me@xxx.com"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/volantis-x/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fa-solid fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
 
+  
 
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%89%E3%80%81Spark-Standalone-HA%E6%A8%A1%E5%BC%8F"><span class="toc-text">三、Spark-Standalone-HA模式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9B%9B%E3%80%81Spark-On-YARN%E6%A8%A1%E5%BC%8F"><span class="toc-text">四、Spark On YARN模式</span></a></li></ol>
-    </div>
-  </section>
+  
+    
+    
+
+  
+
+  
+    
+    
+
+  
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2884,7 +2837,6 @@ bin/spark-submit --master spark://master:7077 xxx.py`
 </aside>
 
 
-
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
@@ -2900,14 +2852,14 @@ bin/spark-submit --master spark://master:7077 xxx.py`
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.add("show");
+    l_header.classList.remove("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="none";
-      cover_wrapper.style.display="none";
+      cover_wrapper.id="half";
+      cover_wrapper.style.display="";
       scroll_down.style.display="none";
     
   
@@ -3857,7 +3809,7 @@ bin/spark-submit --master spark://master:7077 xxx.py`
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/Jermyn-code?tab=repositories"],"description":"This is Jermyn-blog!!!"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/05/17/3、Spark HA & Yarn配置/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"This is Jermyn-blog!!!","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"This is Jermyn-blog!!!"},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"This is Jermyn-blog!!!","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/05/17/3%E3%80%81Spark%20HA%20&%20Yarn%E9%85%8D%E7%BD%AE/","wordCount":0,"datePublished":"2022-05-17T02:41:06.690Z","dateModified":"2022-05-20T02:33:23.181Z","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/Jermyn-code?tab=repositories"],"description":"This is Jermyn-blog!!!"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2022/","name":"2022"}},{"@type":"ListItem","position":4,"item":{"@id":"http://example.com/archives/2022/6/","name":"6"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"This is Jermyn-blog!!!","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"This is Jermyn-blog!!!"},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"This is Jermyn-blog!!!","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://npm.elemecdn.com/volantis-static@0.0.1649552113628/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
