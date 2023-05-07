@@ -146,6 +146,20 @@
 
   
   <url>
+    <loc>https://www.jermyn.cn/tags/java/</loc>
+    <lastmod>2023-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jermyn.cn/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2023-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.jermyn.cn/tags/Hadoop%E8%84%9A%E6%9C%AC%E9%83%A8%E7%BD%B2/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -168,20 +182,6 @@
   
   <url>
     <loc>https://www.jermyn.cn/tags/ntp/</loc>
-    <lastmod>2023-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.jermyn.cn/tags/java/</loc>
-    <lastmod>2023-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.jermyn.cn/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -237,14 +237,14 @@
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/tags/Mysql/</loc>
+    <loc>https://www.jermyn.cn/tags/Tag-Plugins-Plus/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/tags/Tag-Plugins-Plus/</loc>
+    <loc>https://www.jermyn.cn/tags/Mysql/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -302,14 +302,14 @@
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/categories/Linux/</loc>
+    <loc>https://www.jermyn.cn/categories/JavaSE/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/categories/JavaSE/</loc>
+    <loc>https://www.jermyn.cn/categories/Linux/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -323,14 +323,14 @@
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/categories/Mysql/</loc>
+    <loc>https://www.jermyn.cn/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://www.jermyn.cn/categories/Mysql/</loc>
     <lastmod>2023-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
