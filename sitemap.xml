@@ -38,24 +38,6 @@
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/posts/3755.html</loc>
-    
-    <lastmod>2023-05-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.jermyn.cn/posts/ba42.html</loc>
-    
-    <lastmod>2023-05-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.jermyn.cn/posts/c9d2.html</loc>
     
     <lastmod>2023-05-22</lastmod>
@@ -83,15 +65,6 @@
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/posts/d746.html</loc>
-    
-    <lastmod>2023-05-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.jermyn.cn/posts/fac6.html</loc>
     
     <lastmod>2023-05-22</lastmod>
@@ -101,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/posts/9a8a.html</loc>
+    <loc>https://www.jermyn.cn/categories/index.html</loc>
     
     <lastmod>2023-05-22</lastmod>
     
@@ -110,7 +83,61 @@
   </url>
   
   <url>
-    <loc>https://www.jermyn.cn/categories/index.html</loc>
+    <loc>https://www.jermyn.cn/posts/3755.html</loc>
+    
+    <lastmod>2023-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jermyn.cn/posts/eb1d.html</loc>
+    
+    <lastmod>2023-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jermyn.cn/posts/f495.html</loc>
+    
+    <lastmod>2023-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jermyn.cn/posts/ba42.html</loc>
+    
+    <lastmod>2023-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jermyn.cn/posts/d746.html</loc>
+    
+    <lastmod>2023-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jermyn.cn/posts/e6c9.html</loc>
+    
+    <lastmod>2023-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jermyn.cn/posts/9a8a.html</loc>
     
     <lastmod>2023-05-22</lastmod>
     
@@ -136,15 +163,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://www.jermyn.cn/posts/e6c9.html</loc>
-    
-    <lastmod>2023-05-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://www.jermyn.cn/</loc>
@@ -153,6 +171,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://www.jermyn.cn/tags/shell%E8%84%9A%E6%9C%AC/</loc>
+    <lastmod>2023-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://www.jermyn.cn/tags/Hadoop%E8%84%9A%E6%9C%AC%E9%83%A8%E7%BD%B2/</loc>
@@ -282,13 +307,6 @@
   
   <url>
     <loc>https://www.jermyn.cn/tags/Tag-Plugins-Plus/</loc>
-    <lastmod>2023-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.jermyn.cn/tags/shell%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2023-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
